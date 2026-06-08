@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Juntas</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+<h1>Reporte de Juntas</h1>
+
+<div class="info">
+
+<label>RQ</label>
+<input type="text" id="rq" placeholder="Ingrese RQ">
+
+<div class="fechaHora">
+<p>Fecha: <span id="fecha"></span></p>
+<p>Hora: <span id="hora"></span></p>
+</div>
+
+</div>
+
+<div id="contenedorJuntas"></div>
+
+<div class="botones">
+
+<button id="btnAgregar">
+➕ Agregar Junta
+</button>
+
+<button id="btnExcel">
+📊 Exportar Excel
+</button>
+
+<button id="btnPDF">
+📄 Exportar PDF
+</button>
+
+<button id="btnWhatsapp">
+📱 Compartir WhatsApp
+</button>
+
+</div>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
